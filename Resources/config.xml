@@ -14,10 +14,6 @@
             <name>errorHandler</name>
             <label>Error Handler aktivieren:</label>
         </element>
-        <element scope="shop" required="false" type="boolean">
-            <name>Stage</name>
-            <label>Error Handler aktivieren:</label>
-        </element>
         <element required="true" type="select">
             <name>bugsnagEnv</name>
             <value>development</value>
