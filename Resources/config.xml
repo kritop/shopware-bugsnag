@@ -14,5 +14,29 @@
             <name>errorHandler</name>
             <label>Error Handler aktivieren:</label>
         </element>
+        <element scope="shop" required="false" type="boolean">
+            <name>Stage</name>
+            <label>Error Handler aktivieren:</label>
+        </element>
+        <element required="true" type="select">
+            <name>bugsnagEnv</name>
+            <value>development</value>
+            <label lang="de">Umgebung:</label>
+            <label lang="en">Environment:</label>
+            <store>
+                <option>
+                    <value>development</value>
+                    <label>Development</label>
+                </option>
+                <option>
+                    <value>staging</value>
+                    <label>Staging</label>
+                </option>
+                <option>
+                    <value>production</value>
+                    <label>Production</label>
+                </option>
+            </store>
+        </element>
     </elements>
 </config>

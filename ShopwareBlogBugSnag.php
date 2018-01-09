@@ -34,6 +34,7 @@ class ShopwareBlogBugSnag extends Plugin
         }
 
         $bugSnag = new \Bugsnag_Client($apiKey);
+        $bugSnag->setReleaseStage($config['bugsnagEnv']);
 
         if ($config['exceptionHandler']) {
             set_exception_handler([$bugSnag, 'exceptionHandler']);
